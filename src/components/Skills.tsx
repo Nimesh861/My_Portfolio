@@ -5,57 +5,57 @@ const skills = [
   {
     category: 'Programming Languages',
     items: [
-      { name: 'Python', image: '/python.jpg' },
-      { name: 'JAVA', image: '/Java.png' },
-      { name: 'JavaScript', image: '/Javascript.png' },
-      { name: 'C/C++', image: '/C++.png' },
-      { name: 'NodeJS', image: '/Node js.png' },
+      { name: 'Python', image: `${import.meta.env.BASE_URL}Python.jpg` },
+      { name: 'JAVA', image: `${import.meta.env.BASE_URL}Java.png` },
+      { name: 'JavaScript', image: `${import.meta.env.BASE_URL}Javascript.png` },
+      { name: 'C/C++', image: `${import.meta.env.BASE_URL}C++.png` },
+      { name: 'NodeJS', image: `${import.meta.env.BASE_URL}Node js.png` },
     ],
   },
   {
     category: 'Databases and Query Languages',
     items: [
-      { name: 'MySQL', image: '/MySQL.png' },
-      { name: 'PostgreSQL', image: '/PostGreSQL.jpg' },
-      { name: 'Cassandra', image: '/Cassandra.png' },
-      { name: 'MongoDB', image: '/MongoDB.png' },
-      { name: 'DynamoDB', image: '/DynamoDB.jpg' },
+      { name: 'MySQL', image: `${import.meta.env.BASE_URL}MySQL.png` },
+      { name: 'PostgreSQL', image: `${import.meta.env.BASE_URL}PostGreSQL.jpg` },
+      { name: 'Cassandra', image: `${import.meta.env.BASE_URL}Cassandra.png` },
+      { name: 'MongoDB', image: `${import.meta.env.BASE_URL}MongoDB.png` },
+      { name: 'DynamoDB', image: `${import.meta.env.BASE_URL}DynamoDB.jpg` },
     ],
   },
   {
     category: 'Web Technologies',
     items: [
-      { name: 'HTML5', image: '/HTML.png' },
-      { name: 'CSS', image: '/CSS.png' },
-      { name: 'ReactJS', image: '/REACT.png' },
-      { name: 'Django', image: '/Django.png' },
-      { name: 'Typescript', image: '/Typescript.png' },
+      { name: 'HTML5', image: `${import.meta.env.BASE_URL}HTML.png` },
+      { name: 'CSS', image: `${import.meta.env.BASE_URL}CSS.png` },
+      { name: 'ReactJS', image: `${import.meta.env.BASE_URL}REACT.png` },
+      { name: 'Django', image: `${import.meta.env.BASE_URL}Django.png` },
+      { name: 'Typescript', image: `${import.meta.env.BASE_URL}Typescript.png` },
     ],
   },
   {
     category: 'Distributed Technologies',
     items: [
-      { name: 'Map Reduce', image: '/Mapreduce.png' },
-      { name: 'Hive', image: '/Hive.png' },
-      { name: 'Kafka', image: '/Kafka.png' },
-      { name: 'Redis', image: '/redis.jpg' },
+      { name: 'Map Reduce', image: `${import.meta.env.BASE_URL}Mapreduce.png` },
+      { name: 'Hive', image: `${import.meta.env.BASE_URL}Hive.png` },
+      { name: 'Kafka', image: `${import.meta.env.BASE_URL}Kafka.png` },
+      { name: 'Redis', image: `${import.meta.env.BASE_URL}redis.jpg` },
     ],
   },
   {
     category: 'Cloud Technologies',
     items: [
-      { name: 'AWS', image: '/AWS logo.png' },
-      { name: 'GCP', image: '/GCP.png' },
+      { name: 'AWS', image: `${import.meta.env.BASE_URL}AWS logo.png` },
+      { name: 'GCP', image: `${import.meta.env.BASE_URL}GCP.png` },
     ],
   },
   {
     category: 'DevOps Technologies',
     items: [
-      { name: 'GitHub/GitLab', image: '/Git.png' },
-      { name: 'Jenkins', image: '/Jenkins.png' },
-      { name: 'Terraform', image: '/Terraform.png' },
-      { name: 'Docker', image: '/Docker.png' },
-      { name: 'Kubernetes', image: '/Kubernetes.png' },
+      { name: 'GitHub/GitLab', image: `${import.meta.env.BASE_URL}Git.png` },
+      { name: 'Jenkins', image: `${import.meta.env.BASE_URL}Jenkins.png` },
+      { name: 'Terraform', image: `${import.meta.env.BASE_URL}Terraform.png` },
+      { name: 'Docker', image: `${import.meta.env.BASE_URL}Docker.png` },
+      { name: 'Kubernetes', image: `${import.meta.env.BASE_URL}Kubernetes.png` },
     ],
   },
 ];
@@ -84,8 +84,8 @@ const Skills = () => {
                     key={i}
                     className="flex flex-col items-center"
                     whileHover={{
-                      scale: 1.2, // Slight pop effect
-                      y: -5, // Bounces slightly upwards
+                      scale: 1.2,
+                      y: -5,
                       transition: { type: 'spring', stiffness: 300 },
                     }}
                   >
@@ -107,6 +107,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
-
-
