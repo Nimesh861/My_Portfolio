@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
           bg-clip-text text-transparent
           mb-4
         ">
-          Full Stack Developer <span className="ml-1">💻</span>
+          Full Stack Developer <span className="ml-4"></span>
         </h3>
 
         {/* Technologies */}
@@ -145,3 +145,6 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
+
+
+// git remote add origin https://github.com/Nimesh861/My_Portfolio.git

@@ -29,17 +29,17 @@ const Contact: React.FC = () => {
         from_name: formData.name,
         from_email: formData.email,
         message: formData.message,
-        to_email: 'pnimesh0806@gmail.com'
+        to_email: 'pnimesh0806@gmail.com'  // Explicitly set the recipient email
       };
 
       const response = await emailjs.send(
-        'service_epgnnif',
-        'template_ar1bd9c',
+        'service_gd87g9a',           // ✅ Service ID
+        'template_lgvifti',          // ✅ Template ID
         templateParams,
-        'GmS4A2XWnr-PI6Rcz'
+        '79PfTZQRYvr3F3L61'          // ✅ Public Key (user key)
       );
 
-      if (response.status === 200) {
+      if (response.status === 200 || response.text === 'OK') {
         setSubmitSuccess(true);
         setFormData({ name: '', email: '', message: '' });
 
@@ -85,11 +85,15 @@ const Contact: React.FC = () => {
         )}
       </AnimatePresence>
 
-      <motion.div className="relative z-10" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} viewport={{ once: true }}>
-        
-        {/* FIX: Ensure "Contact Me" is Visible */}
+      <motion.div
+        className="relative z-10"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+      >
         <h2 className="text-white text-3xl font-bold mb-4">Contact Me</h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
           <div>
             <h3 className="text-xl font-bold mb-4 text-gray-200">Let's Connect</h3>
@@ -131,7 +135,13 @@ const Contact: React.FC = () => {
                 <textarea id="message" name="message" value={formData.message} onChange={handleChange} required rows={5} className="input-field resize-none" placeholder="Your message here..." />
               </div>
 
-              <motion.button type="submit" className="relative overflow-hidden text-white py-3 px-6 rounded shadow-lg w-full flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-400 hover:from-blue-400 hover:to-blue-600 transition-all duration-300" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} disabled={isSubmitting}>
+              <motion.button
+                type="submit"
+                className="relative overflow-hidden text-white py-3 px-6 rounded shadow-lg w-full flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-400 hover:from-blue-400 hover:to-blue-600 transition-all duration-300"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                disabled={isSubmitting}
+              >
                 {isSubmitting ? (
                   <span>Sending...</span>
                 ) : (
