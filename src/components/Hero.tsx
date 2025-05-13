@@ -123,7 +123,7 @@ const Hero: React.FC = () => {
             "
           >
             <img
-              src="/photo/Profile.jpeg"
+              src="/Profile.jpeg"
               alt="Nimesh Patel"
               className="w-full h-full object-cover rounded-full"
             />

@@ -75,7 +75,7 @@ const projects: ProjectItem[] = [
       'Built Social Dash, a social media management platform supporting 500+ user accounts with multi-account management, post scheduling, and real-time analytics via API integrations with Facebook, Twitter, and LinkedIn. Developed with React, Node.js, Firebase, and AWS in 7 Agile sprints.',
     technologies: ['React', 'Node.js', 'Firebase', 'AWS', 'Jira'],
     githubUrl: 'https://github.com/Nimesh861/SocialMediaDashboard',
-    image: '../photo/Social.jpg'
+    image: '../Social.jpg'
   },
   {
     id: 2,
@@ -84,7 +84,7 @@ const projects: ProjectItem[] = [
       'Reduced response latency by 45% and improved live data synchronization. Automated log monitoring reduced manual effort by 40% and enhanced log retrieval efficiency by 25%.',
     technologies: ['WebSocket', 'Spring Boot'],
     githubUrl: 'https://github.com/Nimesh861/RealTimeLogMonitoring',
-    image: '../photo/Real.jpg'
+    image: '../Real.jpg'
   },
   {
     id: 3,
@@ -93,7 +93,7 @@ const projects: ProjectItem[] = [
       'Achieved 95% schema completeness ensuring data integrity and reliability, and improved query execution accuracy by 98%, enhancing overall system performance.',
     technologies: ['Python', 'MySQL'],
     githubUrl: 'https://github.com/Nimesh861/BankingSystem',
-    image: '../photo/Banking.jpg'
+    image: '../Banking.jpg'
   },
   {
     id: 4,
@@ -102,7 +102,7 @@ const projects: ProjectItem[] = [
       'Increased development efficiency by 30% through detailed design artifacts, reducing ambiguities by 40% and enhancing deployment success rate by 95% with structured planning.',
     technologies: ['Java', 'MySQL'],
     githubUrl: 'https://github.com/Nimesh861/AndroidQuizGame',
-    image: '../photo/Quiz.png'
+    image: '../Quiz.png'
   },
   {
     id: 5,
@@ -111,7 +111,7 @@ const projects: ProjectItem[] = [
       'Developed a Market Trend prediction web application using an LSTM model trained on historical stock data. Delivered real-time visualization and predictions via a Flask-based web UI.',
     technologies: ['Python', 'TensorFlow', 'Keras', 'Flask', 'Yahoo Finance API', 'JavaScript'],
     githubUrl: 'https://github.com/Nimesh861/MarketTrendLSTM',
-    image: '../photo/Trend.jpg'
+    image: '../Trend.jpg'
   },
   {
     id: 6,
@@ -120,7 +120,7 @@ const projects: ProjectItem[] = [
       'Machine learning-powered web app using Django and Decision Tree to predict heart disease risk. Includes patient-doctor appointment management and user-friendly interface.',
     technologies: ['Python', 'Django', 'Scikit-learn', 'Pandas', 'Streamlit', 'JavaScript', 'HTML', 'CSS'],
     githubUrl: 'https://github.com/Nimesh861/HeartDiseasePrediction',
-    image: '../photo/heart.jpg'
+    image: '../heart.jpg'
   }  
 ];
 
